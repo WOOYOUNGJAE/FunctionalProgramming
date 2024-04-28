@@ -16,8 +16,6 @@ let rec rec_pair_cartesian outList list0 list1 =
     | __hd :: __tl -> append_tuple_element outList _hd __hd;;
   
 
-let pair_cartesian list0 list1 = 
+let cartesian list0 list1 = 
   let outList = [] in
   rec_pair_cartesian outList list0 list1;;
-
-pair_cartesian [[1;2;3]] [[4;5;6]]

@@ -3,8 +3,11 @@
 (* let rec gcd n m = 
   if m = 0 then n 
   else gcd (n - m) m;; *)
-
+(* 
 let rec gcd n m = 
-  if m = 0 then n 
+  if m = 0 then n ;; *)
   
-(* print_endline(string_of_int(gcd 4 6)) *)
+let rec gcd m n =
+  match n with
+  | 0 -> m
+  |_ -> gcd n (m mod n);;
